@@ -1,5 +1,11 @@
 import React from "react";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): React.JSX.Element {
     const handleButtonClick = () => {
@@ -64,6 +70,24 @@ function App(): React.JSX.Element {
                         }}
                     ></div>
                 </div>
+
+                <hr />
+                <Counter />
+
+                <hr />
+                <RevealAnswer />
+
+                <hr />
+                <ChangeType />
+
+                <hr />
+                <StartAttempt />
+
+                <hr />
+                <TwoDice />
+
+                <hr />
+                <CycleHoliday />
             </div>
         </div>
     );
